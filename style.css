@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+body{
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    border: 7px dashed yellow;
+    padding: 7px;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hex-colors{
+    border: 5px solid wheat;
+    text-align: center;
+}
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+.hex-colors h2{
+    border: 2px solid slategray;
+    font-size: 2rem;
+    margin-top: 11%;
+}
+@keyframes changecolor{
+    0%{
+        color: red;
+    }
+    20%{
+        color: green;
+    }
+    40%{
+        color: blue;
+    }
+    60%{
+        color: yellow;
+    }
+    80%{
+        color: aqua;
+    }
+    100%{
+        color: dimgrey;
+    }
+}
+@media (max-width:480px) {
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}
